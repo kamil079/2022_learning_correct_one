@@ -1,0 +1,64 @@
+@import "variables";
+
+.main-width {
+    & .menu {
+        li:first-child {
+            color: red;
+        }
+    }
+
+    width: $main-width;
+}
+header {
+    border: 2px dashed $accent-color;
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+
+        background: $primary-color;
+
+        li {
+            padding-left: 10px;
+            list-style: none;
+        }
+    }
+}
+
+.main-width {
+    .ex3 {
+        &:hover {
+            background: red;
+        }
+        li:first-child {
+            color: orange;
+        }
+        li:last-child {
+            color: green;
+        }
+    }
+}
+
+footer {
+    .menu {
+        display: flex;
+        flex-direction: row;
+
+        text-align: left;
+        list-style: none;
+
+        &:hover {
+            color: purple;
+            background: yellow;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        li:last-child {
+            text-align: right; //not working dont know why..
+        }
+    }
+}
+

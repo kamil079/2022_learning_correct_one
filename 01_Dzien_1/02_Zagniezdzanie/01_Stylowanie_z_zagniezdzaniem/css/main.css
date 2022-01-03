@@ -1,0 +1,47 @@
+.main-width {
+  width: 1000px;
+}
+.main-width .menu li:first-child {
+  color: red;
+}
+
+header {
+  border: 2px dashed tomato;
+}
+header .menu {
+  display: flex;
+  flex-direction: row;
+  background: cornflowerblue;
+}
+header .menu li {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.main-width .ex3:hover {
+  background: red;
+}
+.main-width .ex3 li:first-child {
+  color: orange;
+}
+.main-width .ex3 li:last-child {
+  color: green;
+}
+
+footer .menu {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  list-style: none;
+}
+footer .menu:hover {
+  color: purple;
+  background: yellow;
+}
+footer .menu li {
+  padding: 5px;
+}
+footer .menu li:last-child {
+  text-align: right;
+}
+/*# sourceMappingURL=main.css.map */
