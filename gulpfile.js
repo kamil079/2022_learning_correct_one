@@ -1,5 +1,5 @@
 // Ścieżka do aktualnie wykonywanego zadania
-const entryPath = "01_Dzien_1/02_Zagniezdzanie/01_Stylowanie_z_zagniezdzaniem";
+const entryPath = "01_Dzien_1/03_Partials_i_importowanie/01_Zadania";
 
 
 const gulp = require("gulp");
