@@ -1,0 +1,4 @@
+@mixin txt-size($font) {
+    font-size: $font;
+    border-radius: 5px;
+}
