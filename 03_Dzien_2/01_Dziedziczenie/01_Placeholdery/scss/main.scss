@@ -1,0 +1,24 @@
+@import './placeholder';
+
+.test-mixin {
+    width: 210px;
+    position: relative;
+
+    .left_box,
+    .right_box {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .left_box {
+        border: 1px solid red;
+        left: 0;
+        @extend %placeholder-left;
+    }
+    .right_box {
+        border: 1px solid blue;
+        right: 0;
+        @extend %placeholder-right;
+    }
+}

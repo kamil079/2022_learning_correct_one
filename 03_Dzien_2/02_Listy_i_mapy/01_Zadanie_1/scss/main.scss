@@ -1,0 +1,21 @@
+@import './list';
+@import './map';
+
+
+header  {
+    background: nth($list, 1);
+    color: #fff;
+    width: map-get($map, header-width);
+}
+
+section  {
+    background: nth($list, 2);
+    width: map-get($map, text-width);
+
+}
+
+footer  {
+    background: nth($list, 3);
+    width: map-get($map, footer-width);
+
+}

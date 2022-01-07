@@ -1,0 +1,27 @@
+$h1-font-size: 40px;
+$h1-line-height: 2;
+
+$col_map: (
+    col_1: yellow,
+    col_2: blue,
+    col_3: green,
+    col_4: purple,
+    col_5: orange,
+    col_6: red,
+);
+
+$list: map-values($col_map);
+
+h1 {
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    color: nth($list, 1);
+}
+
+@for $i from 2 through 6 {
+    h#{$i} {
+        font-size: calc($h1-font-size / $i);
+        line-height: calc($h1-line-height / $i);
+        color: nth($list, $i )
+    }
+}

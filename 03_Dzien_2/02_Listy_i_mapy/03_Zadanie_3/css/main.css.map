@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAEA;EACI,YAAA;EACA,sBAAA;ACDJ","file":"main.css","sourcesContent":["@import './map';\r\n\r\n.menu {\r\n    width: nth($list, 1);\r\n    border: 1px solid blue;\r\n}",".menu {\n  width: 200px;\n  border: 1px solid blue;\n}"]}

@@ -1,0 +1,5 @@
+@import './mixin';
+
+.draw-container {
+    @include drawItem(circle, blue)
+}

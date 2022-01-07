@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,WAAA;ACCJ","file":"main.css","sourcesContent":["div {\r\n    height: 50px;\r\n    width: 50px;\r\n    margin: 5px;\r\n}\r\n\r\n@for $i from 1 through 10 {\r\n    @if ($i % 2 == 0) {\r\n        \r\n    }\r\n}","div {\n  height: 50px;\n  width: 50px;\n  margin: 5px;\n}"]}

@@ -1,0 +1,12 @@
+@import "./map";
+
+body {
+    background: map-get($color-map, col_4);
+    color: map-get($color-map, col_5);
+}
+
+footer {
+    background: map-get($color-map, col_2);
+    color: map-get($color-map, col_1);
+
+}

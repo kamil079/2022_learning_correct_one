@@ -1,0 +1,14 @@
+div {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+@for $i from 1 through 10 {
+    @if $i % 2 == 0 {
+        border: 2px solid orange;
+    } @else {
+        border: 2px solid blue;
+    }
+}
+//no idea why it is not working

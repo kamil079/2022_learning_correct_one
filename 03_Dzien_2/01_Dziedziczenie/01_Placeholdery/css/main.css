@@ -1,0 +1,41 @@
+.test-mixin .left_box::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background: orange;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.test-mixin .right_box::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background: yellow;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.test-mixin {
+  width: 210px;
+  position: relative;
+}
+.test-mixin .left_box,
+.test-mixin .right_box {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+.test-mixin .left_box {
+  border: 1px solid red;
+  left: 0;
+}
+.test-mixin .right_box {
+  border: 1px solid blue;
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */

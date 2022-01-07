@@ -1,0 +1,13 @@
+@mixin drawItem($shape, $background) {
+    @if $shape == 'circle' {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    } @else if $shape == 'ractangle' {
+        height: 200px;
+        width: 200px;
+    }
+    background: $background;
+}
+
+

@@ -1,0 +1,25 @@
+%placeholder-left {
+    &::before {
+        content: '';
+        height: 50px;
+        width: 50px;
+        background: orange;
+        position: absolute;
+        left:50%;
+        bottom: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+%placeholder-right {
+    &::after {
+        content: '';
+        height: 50px;
+        width: 50px;
+        background: yellow;
+        position: absolute;
+        left:50%;
+        bottom: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
