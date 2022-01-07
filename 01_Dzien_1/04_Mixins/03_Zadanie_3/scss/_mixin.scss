@@ -5,13 +5,15 @@
     border: 1px solid black;
     margin: 40px auto;
 
+    position: relative;
+
     &::after {
         content: "";
         height: 20px;
         width: 20px;
         transform: rotate(45deg);
-        background: yellowgreen;
-        border: 1px solid black;
+        background: beige;
+        border: 1px solid red;
 
         position: absolute;
         top: -11px;

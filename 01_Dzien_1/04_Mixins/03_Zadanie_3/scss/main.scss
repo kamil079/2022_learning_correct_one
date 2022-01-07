@@ -72,8 +72,6 @@ header {
     border: 1px solid black;
     margin: 40px auto;
 
-    position: relative;
-
     @include dialogBox(yellowgreen, 500px);
 }
 

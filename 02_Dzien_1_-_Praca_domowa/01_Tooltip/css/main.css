@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  height: 20px;
+  width: 100px;
+  background: purple;
+  color: #fff;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.tooltip::before {
+  content: "your text";
+  z-index: 2;
+  padding: 5px 20px;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  background: #000;
+  color: #fff;
+  border-radius: 7px;
+  white-space: nowrap;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: #000;
+  visibility: hidden;
+}
+.tooltip:hover::before, .tooltip:hover::after {
+  visibility: visible;
+}
+/*# sourceMappingURL=main.css.map */
