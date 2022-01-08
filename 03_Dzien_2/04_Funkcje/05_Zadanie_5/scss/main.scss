@@ -1,0 +1,7 @@
+@function multiply($nr1, $nr2) {
+    @return $nr1 * $nr2;
+};
+
+article {
+    padding: multiply(4, 4px);
+}

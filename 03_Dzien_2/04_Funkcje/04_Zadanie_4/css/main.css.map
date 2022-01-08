@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAKA;EACI,mBAAA;ACJJ","file":"main.css","sourcesContent":["@use 'sass:color';\r\n\r\n$var1: red;\r\n$var2: yellow;\r\n\r\n.content {\r\n    background: mix($var1, $var2);\r\n};\r\n\r\n",".content {\n  background: #ff8000;\n}"]}

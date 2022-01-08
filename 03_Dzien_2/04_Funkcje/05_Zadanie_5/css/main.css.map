@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAIA;EACI,aAAA;ACHJ","file":"main.css","sourcesContent":["@function multiply($nr1, $nr2) {\r\n    @return $nr1 * $nr2;\r\n};\r\n\r\narticle {\r\n    padding: multiply(4, 4px);\r\n}","article {\n  padding: 16px;\n}"]}

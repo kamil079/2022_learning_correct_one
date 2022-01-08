@@ -1,0 +1,9 @@
+@use 'sass:color';
+
+$var1: red;
+$var2: yellow;
+
+.content {
+    background: mix($var1, $var2);
+};
+

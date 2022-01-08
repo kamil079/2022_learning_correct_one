@@ -1,0 +1,9 @@
+@use "sass:color";
+
+$color: rgb(255, 0, 0);
+
+@for $i from 1 through 4 {
+    h#{$i} {
+        color: color.scale($color, $lightness: ($i * 15%));
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAKA;EACI,eAHK;EAIL,eAAA;ACJJ","file":"main.css","sourcesContent":["@use \"sass:math\";\r\n\r\n$var: 3;\r\n$number: math.percentage($var);\r\n\r\np {\r\n    font-size: $number;\r\n    color: seagreen;\r\n}\r\n","p {\n  font-size: 300%;\n  color: seagreen;\n}"]}

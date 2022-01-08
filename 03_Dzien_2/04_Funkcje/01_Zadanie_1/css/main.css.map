@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAIA;EACI,cAAA;ACHJ","file":"main.css","sourcesContent":["@use \"sass:color\";\r\n\r\n$color: rgb(255, 0, 0);\r\n\r\nh1 {\r\n    color: color.scale($color, $lightness: 20%);\r\n}","h1 {\n  color: #ff3333;\n}"]}

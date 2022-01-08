@@ -1,0 +1,9 @@
+@use "sass:math";
+
+$var: 3;
+$number: math.percentage($var);
+
+p {
+    font-size: $number;
+    color: seagreen;
+}
