@@ -1,0 +1,14 @@
+html {
+  font-size: 10px;
+}
+
+.test p {
+  font-size: 200%;
+}
+.test span {
+  font-size: 2em;
+}
+.test strong {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

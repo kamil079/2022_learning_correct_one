@@ -1,0 +1,22 @@
+.test_height_grandpa,
+.test_height_daddy,
+.test_height_baby {
+    border: 1px solid red;
+}
+
+.test_height_grandpa {
+    height: 50px;
+
+    .test_height_daddy {
+        border-color: seagreen;
+        height: 200%;
+
+
+        .test_height_baby {
+            border-color: blue;
+            height: 50%;
+
+        }
+    }
+}
+//ostanie dziecko ma 50px wysokości, 50% z 200%, gdzie 200% to 2x50px=100px

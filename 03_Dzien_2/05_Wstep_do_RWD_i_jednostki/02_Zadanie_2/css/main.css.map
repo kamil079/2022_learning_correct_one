@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA;EACI,eAAA;ACCJ;ADAI;EACI,gBAAA;ACER","file":"main.css","sourcesContent":[".panel {\r\n    font-size: 40px;\r\n    p {\r\n        font-size: .5em;\r\n    }\r\n}\r\n",".panel {\n  font-size: 40px;\n}\n.panel p {\n  font-size: 0.5em;\n}"]}

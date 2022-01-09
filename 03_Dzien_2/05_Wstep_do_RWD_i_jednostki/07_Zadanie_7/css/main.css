@@ -1,0 +1,11 @@
+.images {
+  width: 80%;
+  height: 90vh;
+  border: 1px solid red;
+}
+.images .img_one {
+  background: url("../images/cat.jpg") center/cover;
+  height: 100%;
+  width: 30%;
+}
+/*# sourceMappingURL=main.css.map */

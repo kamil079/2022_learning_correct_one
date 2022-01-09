@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA;EACI,eAAA;ACCJ;ADAI;EACI,cAAA;EACA,UAAA;ACER","file":"main.css","sourcesContent":[".bg_box {\r\n    font-size: 10px;\r\n    .box {\r\n        font-size: 2em;\r\n        width: 3em;\r\n    }\r\n}",".bg_box {\n  font-size: 10px;\n}\n.bg_box .box {\n  font-size: 2em;\n  width: 3em;\n}"]}
