@@ -1,0 +1,13 @@
+$font-sizes: (
+    fs1: 100px,
+    fs2: 50px,
+    fs3: 6px,
+);
+
+$font-size-list: map-values($font-sizes);
+
+@for $i from 1 through 3 {
+    h#{$i} {
+        font-size: nth($font-size-list, $i);
+    }
+}
