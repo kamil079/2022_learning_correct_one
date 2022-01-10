@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .test {
+  height: 300px;
+  width: 100%;
+  background: red;
+  margin: 2px;
+}
+.wrapper .test1 {
+  background: blue;
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    display: flex;
+  }
+  .wrapper .test {
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

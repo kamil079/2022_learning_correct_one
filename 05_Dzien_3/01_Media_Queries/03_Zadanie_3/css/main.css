@@ -1,0 +1,16 @@
+@media (max-width: 400px) {
+  body {
+    background: seagreen;
+  }
+}
+@media (min-width: 401px) {
+  body {
+    background: rebeccapurple;
+  }
+}
+@media (min-width: 801px) {
+  body {
+    background: orangered;
+  }
+}
+/*# sourceMappingURL=main.css.map */

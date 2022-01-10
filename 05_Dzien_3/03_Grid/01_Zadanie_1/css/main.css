@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  width: 100vh;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 100%;
+  max-width: max(90%, 900px);
+  border: 1px solid seagreen;
+  margin: 5px;
+}
+.wrapper .grid {
+  display: grid;
+  grid-template-areas: "col col col col col col col col col col col col";
+  gap: 5px;
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,10 @@
+@import "./mixin";
+
+.my-form {
+    input,
+    textarea {
+        @include placeholder {
+            color: red;
+        }
+    }
+}

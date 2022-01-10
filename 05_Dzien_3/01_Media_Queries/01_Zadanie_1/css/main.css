@@ -1,0 +1,9 @@
+body {
+  background: blue;
+}
+@media (max-width: 420px) {
+  body {
+    background: yellow;
+  }
+}
+/*# sourceMappingURL=main.css.map */

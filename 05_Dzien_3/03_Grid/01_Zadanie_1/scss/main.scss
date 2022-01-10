@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    width: 100vh;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 100%;
+    max-width: max(90%, 900px);
+    border: 1px solid seagreen;
+    margin: 5px;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 5px;
+        height: 100%;
+    }
+}
+
+
+// $col: 12;
+
+// @for $i from 1 through $col {
+//     .col-#{$i} {
+//         width: calc(100% / $col);
+//     }
+// }

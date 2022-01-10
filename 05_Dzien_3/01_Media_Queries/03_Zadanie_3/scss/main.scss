@@ -1,0 +1,11 @@
+body {
+    @media (max-width: 400px) {
+        background: seagreen;
+    }
+    @media (min-width: 401px) {
+        background: rebeccapurple;
+    }
+    @media (min-width: 801px) {
+        background: orangered;
+    }
+}

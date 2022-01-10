@@ -1,0 +1,17 @@
+.my-form input::-webkit-input-placeholder,
+.my-form textarea::-webkit-input-placeholder {
+  color: red;
+}
+.my-form input:-moz-placeholder,
+.my-form textarea:-moz-placeholder {
+  color: red;
+}
+.my-form input::-moz-placeholder,
+.my-form textarea::-moz-placeholder {
+  color: red;
+}
+.my-form input:-ms-input-placeholder,
+.my-form textarea:-ms-input-placeholder {
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */
