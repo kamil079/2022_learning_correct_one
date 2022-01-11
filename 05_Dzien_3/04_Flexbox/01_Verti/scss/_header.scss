@@ -1,0 +1,51 @@
+@import "./colors";
+
+.container {
+    // width: 100vh;
+    // height: 100vh;
+
+    background: $background-col;
+
+    .header {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .hamburger-menu {
+            background: darken($background-col, 20%);
+            padding: .5em;
+            margin: .2em;
+            width: fit-content;
+            border-radius: 5px;
+
+            span {
+                height: .17em;
+                width: 1em;
+                margin: .2em .7em;
+                background: $white-col;
+                display: block;
+            }
+        }
+
+        .logo {
+            background: $background-logo;
+            color: $white-col;
+            border-radius: 5px;
+            padding: 1px 5px;
+            margin: 5px;
+            font-size: 2rem;
+            display: inline-block;
+            font-family: "Oleo Script", cursive;
+            width: fit-content;
+            align-self: center;
+        }
+
+        .header-content {
+            width: 90%;
+            height: 20em;
+            background: $white-col;
+            margin: 0 auto;
+        }
+    }
+}
