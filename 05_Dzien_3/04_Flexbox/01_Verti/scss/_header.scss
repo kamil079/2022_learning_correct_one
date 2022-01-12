@@ -1,29 +1,45 @@
 @import "./colors";
+@import "./reset";
 
 .container {
-    // width: 100vh;
-    // height: 100vh;
-
     background: $background-col;
 
     .header {
         width: 100%;
         height: 100%;
+
         display: flex;
         flex-direction: column;
 
+        .manu-nav {
+            display: none;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+
+            height: 5em;
+        }
+
         .hamburger-menu {
-            background: darken($background-col, 20%);
-            padding: .5em;
-            margin: .2em;
+            padding: 0.5em;
+            margin: 0.2em;
             width: fit-content;
-            border-radius: 5px;
+
+            border-radius: 0.5em;
+
+            background: darken($background-col, 20%);
+
+            align-self: baseline;
 
             span {
-                height: .17em;
+                height: 0.17em;
                 width: 1em;
-                margin: .2em .7em;
+                margin: 0.2em 0.7em;
+
                 background: $white-col;
+
                 display: block;
             }
         }
@@ -31,21 +47,187 @@
         .logo {
             background: $background-logo;
             color: $white-col;
-            border-radius: 5px;
-            padding: 1px 5px;
-            margin: 5px;
+
+            border-radius: 0.2em;
+
+            padding: 0 0.2em;
+            margin: 0 auto;
+            margin-top: 1em;
+            transform: translateX(-50%);
+
             font-size: 2rem;
+            font-family: "Oleo Script";
+
             display: inline-block;
-            font-family: "Oleo Script", cursive;
             width: fit-content;
             align-self: center;
         }
 
         .header-content {
             width: 90%;
-            height: 20em;
+            margin: 0.5em auto;
+            padding: 3em 0em;
+
             background: $white-col;
-            margin: 0 auto;
+            color: $txt-col;
+
+            border-radius: 0.3em;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                font-size: 3em;
+                font-weight: 900;
+                font-family: system-ui;
+            }
+
+            .sub-title {
+                font-size: 2em;
+                text-align: center;
+                font-family: system-ui;
+
+                padding: 0 1.7em;
+                margin-bottom: 1em;
+
+                color: lighten($txt-col, 30%);
+            }
+
+            button {
+                margin: 0.2em;
+                padding: 0.7em;
+                width: 90%;
+
+                border-style: none;
+                border-radius: 0.3em;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    font-size: 1.6em;
+                    font-family: system-ui;
+                    font-weight: 700;
+
+                    margin-left: 0.4em;
+                }
+            }
+
+            .start {
+                background: $button-col;
+                color: $white-col;
+                margin-left: 0.2em;
+            }
+
+            .more-info {
+                background: $background-col;
+                color: lighten($txt-col, 5%);
+            }
+        }
+    }
+}
+
+@media (min-width: 620px) {
+    .container {
+        width: 100%;
+
+        .hamburger-menu {
+            display: none;
+        }
+
+        .header {
+            width: 100%;
+
+            .navigation {
+                margin: 0 auto;
+                width: 98%;
+
+                align-items: center;
+
+                .logo {
+                    margin: 0;
+                    margin-left: 1.3em;
+                }
+
+                .manu-nav {
+                    display: flex;
+
+                    li:first-child {
+                        a {
+                            color: $white-col;
+                            background: $txt-col;
+                            border-radius: 0.5em;
+
+                            padding: 0.3em 0.8em;
+                        }
+                    }
+
+                    li {
+                        list-style: none;
+                        padding: 1em;
+
+                        a {
+                            text-decoration: none;
+                            font-size: 1em;
+                            font-family: system-ui;
+                            font-weight: 700;
+                            color: $txt-col;
+                        }
+                    }
+                }
+            }
+            .header-content {
+                width: 97%;
+                margin: 1em;
+                padding: 3em 6em;
+
+                display: grid;
+                grid-template-areas:
+                    "title start"
+                    "sub-title more-info";
+
+                .title {
+                    grid-area: title;
+                }
+
+                .sub-title {
+                    grid-area: sub-title;
+
+                    padding: 0;
+                    margin-right: 2em;
+                    width: 65%;
+
+                    text-align: left;
+                }
+
+                button {
+                    padding: 1.2em 2em;
+                    margin-top: 1em;
+
+                    white-space: nowrap;
+
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    p {
+                        margin-right: 1em;
+                        font-weight: 900;
+                    }
+                }
+
+                .start {
+                    grid-area: start;
+                }
+
+                .more-info {
+                    margin-top: 0;
+                    grid-area: more-info;
+                }
+            }
         }
     }
 }
