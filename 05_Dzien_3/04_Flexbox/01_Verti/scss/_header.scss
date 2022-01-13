@@ -1,5 +1,6 @@
 @import "./colors";
 @import "./reset";
+@import './fonts';
 
 .container {
     background: $background-col;
@@ -71,7 +72,7 @@
             background: $white-col;
             color: $txt-col;
 
-            border-radius: 0.3em;
+            border-radius: 1.5em;
 
             display: flex;
             flex-direction: column;
@@ -207,6 +208,7 @@
                 button {
                     padding: 1.2em 2em;
                     margin-top: 1em;
+                    width: 35vw;
 
                     white-space: nowrap;
 
@@ -226,6 +228,39 @@
                 .more-info {
                     margin-top: 0;
                     grid-area: more-info;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 100%;
+
+        .header {
+            width: 100%;
+
+            .navigation {
+                width: 80%;
+
+                margin: 1em auto;
+
+                .logo {
+                    font-size: 2.5em;
+
+                    margin-left: 1.2em;
+                }
+            }
+
+            .header-content {
+                width: 80%;
+
+                margin: 0 auto;
+                margin-bottom: 1em;
+
+                button {
+                    width: 30vw;
                 }
             }
         }

@@ -1,0 +1,43 @@
+@import "./colors";
+@import "./reset";
+@import "./fonts";
+
+.container {
+    width: 100%;
+
+    font-family: $font-family;
+
+    .highlight {
+        margin: 0 auto;
+
+        .highlight-box {
+            margin: 1em auto;
+            width: 90%;
+
+
+            background: $white-col;
+            border-radius: 1.5em;
+
+            .img {
+                border-radius: 1.5em 1.5em 0 0;
+
+                height: 50%;
+                width: 100%;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .highlight-box-content {
+
+                padding: 1em;
+
+                p {
+                    margin-bottom: 2em;
+
+                }
+            }
+        }
+    }
+}
