@@ -157,7 +157,7 @@
   }
   .container .header .header-content {
     width: 97%;
-    margin: 1em;
+    margin: 1em auto;
     padding: 3em 6em;
     display: grid;
     grid-template-areas: "title start" "sub-title more-info";
@@ -234,21 +234,98 @@
 .container .highlight .highlight-box {
   margin: 1em auto;
   width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
   background: #fff;
   border-radius: 1.5em;
 }
 .container .highlight .highlight-box .img {
-  border-radius: 1.5em 1.5em 0 0;
-  height: 50%;
+  grid-column: 1/2;
+  grid-row: 1/2;
   width: 100%;
+  border-radius: 1.5em 1.5em 0 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .container .highlight .highlight-box .highlight-box-content {
-  padding: 1em;
+  font-family: system-ui;
+  padding: 1.5em;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 .container .highlight .highlight-box .highlight-box-content p {
-  margin-bottom: 2em;
+  color: #777777;
+  margin: 0.3em auto;
+  padding: 0 0.2em;
+}
+.container .highlight .highlight-box .highlight-box-content .box-title {
+  font-size: 2.2em;
+  font-weight: 900;
+  margin-top: 1.2em;
+}
+.container .highlight .highlight-box .highlight-box-content .box-more {
+  font-size: 1.5em;
+}
+.container .highlight .highlight-box .highlight-box-content .box-content {
+  font-size: 1.5em;
+  margin: 1.4em 0;
+  line-height: 2em;
+}
+
+@media (min-width: 620px) {
+  .container .highlight {
+    display: flex;
+    padding: 1em 0;
+  }
+  .container .highlight .highlight-box {
+    margin: 0 1.2em;
+  }
+  .container .highlight .highlight-box .highlight-box-content p {
+    color: #777777;
+    margin: 0.2em auto;
+    padding: 0 0.1em;
+  }
+  .container .highlight .highlight-box .highlight-box-content .box-title {
+    font-size: 1.8em;
+    font-weight: 900;
+    margin-top: 0.6em;
+  }
+  .container .highlight .highlight-box .highlight-box-content .box-more {
+    font-size: 1.1em;
+  }
+  .container .highlight .highlight-box .highlight-box-content .box-content {
+    font-size: 1.1em;
+    margin: 1.2em 0;
+    line-height: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  .highlight {
+    width: 82%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-size: 10px;
+}
+
+.foto-frame {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.foto-frame img {
+  width: 100%;
+  border-radius: 1.5em 1.5em 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
