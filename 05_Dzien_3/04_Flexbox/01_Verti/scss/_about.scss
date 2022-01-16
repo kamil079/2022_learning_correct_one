@@ -2,22 +2,159 @@
 @import "./reset";
 @import "./fonts";
 
-.foto-frame {
-    margin: 0 auto;
-    width: 90%;
-
-    display: flex;
-    flex-direction: column;
-
-    box-sizing: border-box;
-
-    img {
+.container {
+    .about {
         width: 100%;
+        background: $white-col;
 
-        border-radius: 1.5em 1.5em 0 0;
+        padding: 3em;
 
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        color: $txt-col;
+
+        .title-about,
+        .first-txt-about,
+        .more-about {
+            font-family: system-ui;
+            margin-bottom: 1em;
+            line-height: 2em;
+        }
+
+        .title-about {
+            font-size: 2em;
+            font-weight: 900;
+        }
+
+        .first-txt-about {
+            margin-bottom: 2em;
+        }
+
+        .btn-more-reading {
+            width: 100%;
+
+            background: $button-col;
+            border-style: none;
+            border-radius: 0.5em;
+            color: $white-col;
+
+            padding: 1em;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                align-self: center;
+                margin-left: 1em;
+
+                font-weight: 700;
+                font-size: 1.6em;
+                font-family: system-ui;
+            }
+        }
+    }
+
+    .foto-title,
+    .foto-frame {
+        width: 100%;
+        background: $white-col;
+    }
+
+    .foto-title {
+        font-size: 1.5em;
+        font-weight: 900;
+        color: $txt-col;
+
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    .foto-frame {
+        display: grid;
+        gap: 0.5em;
+        grid-template-areas:
+            "foto-more-stuff foto-more-stuff"
+            "foto-more-stuff foto-more-stuff"
+            "btn-more btn-more";
+
+        box-sizing: border-box;
+
+        img {
+            border-radius: 1.5em;
+            width: 100%;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .btn-more {
+            width: 202%;
+
+            margin: 2em auto;
+
+            background: $button-col;
+            border-style: none;
+            border-radius: 0.5em;
+            color: $white-col;
+
+            padding: 1em;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                align-self: center;
+                margin-left: 1em;
+
+                font-weight: 700;
+                font-size: 1.6em;
+                font-family: system-ui;
+            }
+        }
+    }
+}
+
+@media (min-width: 620px) {
+    .container {
+        .about {
+            margin: 0 auto;
+            padding: 3em 2em;
+
+            display: grid;
+            gap: 4em;
+            grid-template-areas: "left right right";
+
+            .left {
+                grid-area: left;
+
+                .foto-title {
+                    margin-top: 0;
+                }
+
+                .foto-frame {
+                    grid-template-columns: 1fr 1fr;
+
+                    .btn-more {
+                        width: 100%;
+                        align-self: flex-start;
+                    }
+                }
+            }
+            .right {
+                grid-area: right;
+
+                .btn-more-reading {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        .about {
+            padding: 3em 10%;
+        }
     }
 }
