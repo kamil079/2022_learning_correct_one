@@ -71,10 +71,7 @@
     .foto-frame {
         display: grid;
         gap: 0.5em;
-        grid-template-areas:
-            "foto-more-stuff foto-more-stuff"
-            "foto-more-stuff foto-more-stuff"
-            "btn-more btn-more";
+        grid-template-columns: 1fr 1fr;
 
         box-sizing: border-box;
 
@@ -87,7 +84,7 @@
             background-size: cover;
         }
         .btn-more {
-            width: 202%;
+            width: 100%;
 
             margin: 2em auto;
 

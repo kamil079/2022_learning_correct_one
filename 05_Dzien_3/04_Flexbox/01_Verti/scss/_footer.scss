@@ -2,3 +2,75 @@
 @import "./reset";
 @import "./fonts";
 
+.container {
+    .footer {
+        padding: 3em;
+        padding-top: 0;
+
+        .random-stuff {
+            display: flex;
+            flex-direction: column;
+
+            .footer-title {
+                font-weight: 700;
+                font-size: 1.6em;
+                font-family: system-ui;
+
+                margin: 1em 0;
+            }
+
+            a {
+                line-height: 1.8em;
+                color: $txt-col;
+            }
+        }
+
+        .contact-us {
+            display: flex;
+            flex-direction: column;
+
+            .footer-title {
+                font-weight: 700;
+                font-size: 1.6em;
+                font-family: system-ui;
+
+                margin: 1em 0;
+            }
+
+            i {
+                color: $txt-col;
+            }
+        }
+
+        .underline {
+            border-bottom: 1px solid lighten($txt-col, 40%);
+            margin-top: 1.5em;
+        }
+    }
+}
+
+@media (min-width: 620px) {
+    .container {
+        .underline {
+            display: none;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        .underline {
+            display: none;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
