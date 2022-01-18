@@ -1,0 +1,10 @@
+.one-image {
+  height: 300px;
+  width: 600px;
+  border: 1px solid seagreen;
+}
+.one-image img {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

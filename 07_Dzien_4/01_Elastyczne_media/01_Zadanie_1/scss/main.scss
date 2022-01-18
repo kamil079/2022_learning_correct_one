@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.images {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+
+    .bg {
+        width: 50%;
+        background-image: url("../images/rabbit.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    img {
+        width: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .images {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+
+        .bg,
+        img {
+            width: 100%;
+        }
+    }
+}

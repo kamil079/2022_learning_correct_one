@@ -1,0 +1,13 @@
+.one-image-bg {
+  height: 300px;
+  width: 600px;
+  border: 2px dashed seagreen;
+}
+.one-image-bg div {
+  background-image: url("../images/rabbit.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50%;
+}
+/*# sourceMappingURL=main.css.map */
