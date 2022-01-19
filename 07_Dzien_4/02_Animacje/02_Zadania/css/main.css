@@ -146,6 +146,40 @@
   cursor: pointer;
 }
 
+.red-button:hover {
+  -webkit-animation: btn-red-anim 0.5s infinite;
+          animation: btn-red-anim 0.5s infinite;
+}
+
+@-webkit-keyframes btn-red-anim {
+  0% {
+    background: seagreen;
+  }
+  33% {
+    transform: rotate(45deg);
+  }
+  66% {
+    background: rebeccapurple;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes btn-red-anim {
+  0% {
+    background: seagreen;
+  }
+  33% {
+    transform: rotate(45deg);
+  }
+  66% {
+    background: rebeccapurple;
+  }
+  100% {
+    scale: 1;
+  }
+}
 .blue-button {
   padding: 20px 40px;
   background: dodgerblue;
@@ -157,6 +191,48 @@
   cursor: pointer;
 }
 
+.blue-button:hover {
+  -webkit-animation: blue-btn-anim 2s linear infinite alternate;
+          animation: blue-btn-anim 2s linear infinite alternate;
+}
+
+@-webkit-keyframes blue-btn-anim {
+  25% {
+    background: red;
+    transform: translateY(100%);
+  }
+  50% {
+    background: green;
+    transform: translateY(100%) translateX(100%);
+  }
+  75% {
+    background: yellow;
+    transform: translateX(100%);
+  }
+  100% {
+    background: hotpink;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blue-btn-anim {
+  25% {
+    background: red;
+    transform: translateY(100%);
+  }
+  50% {
+    background: green;
+    transform: translateY(100%) translateX(100%);
+  }
+  75% {
+    background: yellow;
+    transform: translateX(100%);
+  }
+  100% {
+    background: hotpink;
+    transform: rotate(360deg);
+  }
+}
 .green-button {
   padding: 20px 40px;
   background: #2feb73;
@@ -167,6 +243,30 @@
   cursor: pointer;
 }
 
+.green-button:hover {
+  -webkit-animation: green-btn-anim 1s linear infinite;
+          animation: green-btn-anim 1s linear infinite;
+}
+
+@-webkit-keyframes green-btn-anim {
+  25% {
+    transform: scale(2);
+  }
+  75% {
+    transform: rotate(360deg);
+    background: blue;
+  }
+}
+
+@keyframes green-btn-anim {
+  25% {
+    transform: scale(2);
+  }
+  75% {
+    transform: rotate(360deg);
+    background: blue;
+  }
+}
 .portfolio-projects {
   background: #fafafa;
   padding: 100px 20px;
@@ -228,5 +328,72 @@
 .project-text {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio-projects-list .project:first-child .project-title {
+  visibility: hidden;
+}
+.portfolio-projects-list .project:first-child:hover .project-overflow {
+  -webkit-animation: anim2 1s linear infinite;
+          animation: anim2 1s linear infinite;
+}
+.portfolio-projects-list .project:first-child:hover .project-overflow .project-title,
+.portfolio-projects-list .project:first-child:hover .project-overflow .project-text {
+  -webkit-animation: anim 1s linear infinite;
+          animation: anim 1s linear infinite;
+}
+.portfolio-projects-list .project:nth-child(2) .project-title {
+  visibility: hidden;
+}
+.portfolio-projects-list .project:nth-child(2):hover .project-overflow {
+  -webkit-animation: anim2 1s linear infinite;
+          animation: anim2 1s linear infinite;
+}
+.portfolio-projects-list .project:nth-child(2):hover .project-overflow .project-title,
+.portfolio-projects-list .project:nth-child(2):hover .project-overflow .project-text {
+  -webkit-animation: anim 1s linear infinite;
+          animation: anim 1s linear infinite;
+}
+.portfolio-projects-list .project:last-child .project-title {
+  visibility: hidden;
+}
+.portfolio-projects-list .project:last-child:hover .project-overflow {
+  -webkit-animation: anim2 1s linear infinite;
+          animation: anim2 1s linear infinite;
+}
+.portfolio-projects-list .project:last-child:hover .project-overflow .project-title,
+.portfolio-projects-list .project:last-child:hover .project-overflow .project-text {
+  -webkit-animation: anim 1s linear infinite;
+          animation: anim 1s linear infinite;
+}
+@-webkit-keyframes anim {
+  0% {
+    visibility: visible;
+    color: #000;
+  }
+  30% {
+    transform: translateX(20%);
+  }
+}
+@keyframes anim {
+  0% {
+    visibility: visible;
+    color: #000;
+  }
+  30% {
+    transform: translateX(20%);
+  }
+}
+@-webkit-keyframes anim2 {
+  100% {
+    opacity: 0.5;
+    color: #000;
+  }
+}
+@keyframes anim2 {
+  100% {
+    opacity: 0.5;
+    color: #000;
+  }
 }
 /*# sourceMappingURL=main.css.map */

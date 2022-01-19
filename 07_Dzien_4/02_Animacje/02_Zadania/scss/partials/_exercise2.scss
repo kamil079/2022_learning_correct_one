@@ -19,9 +19,23 @@
 }
 
 .red-button:hover {
-
+    animation: btn-red-anim 0.5s infinite;
 }
 
+@keyframes btn-red-anim {
+    0% {
+        background: seagreen;
+    }
+    33% {
+        transform: rotate(45deg);
+    }
+    66% {
+        background: rebeccapurple;
+    }
+    100% {
+        scale: 1;
+    }
+}
 
 .blue-button {
     padding: 20px 40px;
@@ -35,6 +49,28 @@
 }
 
 .blue-button:hover {
+    animation: blue-btn-anim 2s linear infinite alternate;
+}
+
+@keyframes blue-btn-anim {
+    0% {
+    }
+    25% {
+        background: red;
+        transform: translateY(100%);
+    }
+    50% {
+        background: green;
+        transform: translateY(100%) translateX(100%);
+    }
+    75% {
+        background: yellow;
+        transform: translateX(100%);
+    }
+    100% {
+        background: hotpink;
+        transform: rotate(360deg);
+    }
 }
 
 .green-button {
@@ -48,4 +84,15 @@
 }
 
 .green-button:hover {
+    animation: green-btn-anim 1s linear infinite ;
+}
+
+@keyframes green-btn-anim {
+    25% {
+        transform: scale(2);
+    }
+    75% {
+        transform: rotate(360deg);
+        background: blue;
+    }
 }
