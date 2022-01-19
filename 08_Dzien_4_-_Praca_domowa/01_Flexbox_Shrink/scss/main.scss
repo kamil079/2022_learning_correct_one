@@ -1,1 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+.flex-container {
+    height: 100vh;
+    box-sizing: border-box;
+    background: #000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: fit-content;
+
+    .set {
+        overflow: auto;
+
+        height: 200px;
+        min-width: 500px;
+        max-width: 1024px;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .photo:nth-child(1) {
+        background-image: url(../images/pexels-adam-fredén-3036240.jpg);
+    }
+
+    .photo:nth-child(2) {
+        background-image: url(../images/pexels-giacomo-grattoni-4085114.jpg);
+    }
+
+    .photo:nth-child(3) {
+        background-image: url(../images/pexels-jonathan-borba-4764324.jpg);
+    }
+
+    .photo:nth-child(4) {
+        background-image: url(../images/pexels-yücel-özel-7727625.jpg);
+    }
+
+    .photo:nth-child(5) {
+        background-image: url(../images/pexels-yücel-özel-7727965.jpg);
+    }
+}

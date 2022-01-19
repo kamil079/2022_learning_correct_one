@@ -1,0 +1,24 @@
+.flex-container-column {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.flex-container-column header {
+  justify-self: flex-start;
+  background: red;
+  height: 20%;
+  width: 100%;
+}
+.flex-container-column main {
+  background: green;
+  width: 100%;
+  flex-grow: 1;
+  overflow: auto;
+}
+.flex-container-column footer {
+  background: yellow;
+  height: 20%;
+  width: 100%;
+  justify-self: flex-end;
+}
+/*# sourceMappingURL=main.css.map */
